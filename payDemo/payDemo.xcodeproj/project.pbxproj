@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCE588B91DE855C1008B80CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588B81DE855C1008B80CA /* main.m */; };
+		DCE588BC1DE855C1008B80CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588BB1DE855C1008B80CA /* AppDelegate.m */; };
+		DCE588C21DE855C1008B80CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE588C01DE855C1008B80CA /* Main.storyboard */; };
+		DCE588C41DE855C1008B80CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE588C31DE855C1008B80CA /* Assets.xcassets */; };
+		DCE588C71DE855C1008B80CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE588C51DE855C1008B80CA /* LaunchScreen.storyboard */; };
+		DCE588D21DE855C2008B80CA /* payDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588D11DE855C2008B80CA /* payDemoTests.m */; };
+		DCE588DD1DE855C2008B80CA /* payDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588DC1DE855C2008B80CA /* payDemoUITests.m */; };
+		DCE589011DE85640008B80CA /* ThirdPay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCE588EB1DE85640008B80CA /* ThirdPay.bundle */; };
+		DCE589021DE85640008B80CA /* ZXPAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588EF1DE85640008B80CA /* ZXPAutoLayout.m */; };
+		DCE589031DE85640008B80CA /* ANBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588F31DE85640008B80CA /* ANBMainViewController.m */; };
+		DCE589041DE85640008B80CA /* ANBPayWaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588F51DE85640008B80CA /* ANBPayWaysController.m */; };
+		DCE589051DE85640008B80CA /* ANBPaysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588F81DE85640008B80CA /* ANBPaysModel.m */; };
+		DCE589061DE85640008B80CA /* ANBPayTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588FB1DE85640008B80CA /* ANBPayTitleView.m */; };
+		DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588FD1DE85640008B80CA /* ANBPayWaysCell.m */; };
+		DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE589001DE85640008B80CA /* ANBResourceUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCE588CE1DE855C1008B80CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE588AC1DE855C1008B80CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE588B31DE855C1008B80CA;
+			remoteInfo = payDemo;
+		};
+		DCE588D91DE855C2008B80CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE588AC1DE855C1008B80CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE588B31DE855C1008B80CA;
+			remoteInfo = payDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCE588B41DE855C1008B80CA /* payDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = payDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE588B81DE855C1008B80CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCE588BA1DE855C1008B80CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCE588BB1DE855C1008B80CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCE588C11DE855C1008B80CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCE588C31DE855C1008B80CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE588C61DE855C1008B80CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCE588C81DE855C1008B80CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE588CD1DE855C1008B80CA /* payDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = payDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE588D11DE855C2008B80CA /* payDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = payDemoTests.m; sourceTree = "<group>"; };
+		DCE588D31DE855C2008B80CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE588D81DE855C2008B80CA /* payDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = payDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE588DC1DE855C2008B80CA /* payDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = payDemoUITests.m; sourceTree = "<group>"; };
+		DCE588DE1DE855C2008B80CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE588EB1DE85640008B80CA /* ThirdPay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThirdPay.bundle; sourceTree = "<group>"; };
+		DCE588EE1DE85640008B80CA /* ZXPAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPAutoLayout.h; sourceTree = "<group>"; };
+		DCE588EF1DE85640008B80CA /* ZXPAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPAutoLayout.m; sourceTree = "<group>"; };
+		DCE588F21DE85640008B80CA /* ANBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBMainViewController.h; sourceTree = "<group>"; };
+		DCE588F31DE85640008B80CA /* ANBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBMainViewController.m; sourceTree = "<group>"; };
+		DCE588F41DE85640008B80CA /* ANBPayWaysController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBPayWaysController.h; sourceTree = "<group>"; };
+		DCE588F51DE85640008B80CA /* ANBPayWaysController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPayWaysController.m; sourceTree = "<group>"; };
+		DCE588F71DE85640008B80CA /* ANBPaysModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBPaysModel.h; sourceTree = "<group>"; };
+		DCE588F81DE85640008B80CA /* ANBPaysModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPaysModel.m; sourceTree = "<group>"; };
+		DCE588FA1DE85640008B80CA /* ANBPayTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBPayTitleView.h; sourceTree = "<group>"; };
+		DCE588FB1DE85640008B80CA /* ANBPayTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPayTitleView.m; sourceTree = "<group>"; };
+		DCE588FC1DE85640008B80CA /* ANBPayWaysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBPayWaysCell.h; sourceTree = "<group>"; };
+		DCE588FD1DE85640008B80CA /* ANBPayWaysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPayWaysCell.m; sourceTree = "<group>"; };
+		DCE588FF1DE85640008B80CA /* ANBResourceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBResourceUtils.h; sourceTree = "<group>"; };
+		DCE589001DE85640008B80CA /* ANBResourceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBResourceUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCE588B11DE855C1008B80CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588CA1DE855C1008B80CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588D51DE855C2008B80CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCE588AB1DE855C1008B80CA = {
+			isa = PBXGroup;
+			children = (
+				DCE588B61DE855C1008B80CA /* payDemo */,
+				DCE588D01DE855C1008B80CA /* payDemoTests */,
+				DCE588DB1DE855C2008B80CA /* payDemoUITests */,
+				DCE588B51DE855C1008B80CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCE588B51DE855C1008B80CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588B41DE855C1008B80CA /* payDemo.app */,
+				DCE588CD1DE855C1008B80CA /* payDemoTests.xctest */,
+				DCE588D81DE855C2008B80CA /* payDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCE588B61DE855C1008B80CA /* payDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588EA1DE85640008B80CA /* Bundle */,
+				DCE588EC1DE85640008B80CA /* Thirds */,
+				DCE588F01DE85640008B80CA /* UIs */,
+				DCE588BA1DE855C1008B80CA /* AppDelegate.h */,
+				DCE588BB1DE855C1008B80CA /* AppDelegate.m */,
+				DCE588C01DE855C1008B80CA /* Main.storyboard */,
+				DCE588C31DE855C1008B80CA /* Assets.xcassets */,
+				DCE588C51DE855C1008B80CA /* LaunchScreen.storyboard */,
+				DCE588C81DE855C1008B80CA /* Info.plist */,
+				DCE588B71DE855C1008B80CA /* Supporting Files */,
+			);
+			path = payDemo;
+			sourceTree = "<group>";
+		};
+		DCE588B71DE855C1008B80CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588B81DE855C1008B80CA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCE588D01DE855C1008B80CA /* payDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588D11DE855C2008B80CA /* payDemoTests.m */,
+				DCE588D31DE855C2008B80CA /* Info.plist */,
+			);
+			path = payDemoTests;
+			sourceTree = "<group>";
+		};
+		DCE588DB1DE855C2008B80CA /* payDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588DC1DE855C2008B80CA /* payDemoUITests.m */,
+				DCE588DE1DE855C2008B80CA /* Info.plist */,
+			);
+			path = payDemoUITests;
+			sourceTree = "<group>";
+		};
+		DCE588EA1DE85640008B80CA /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588EB1DE85640008B80CA /* ThirdPay.bundle */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		DCE588EC1DE85640008B80CA /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588ED1DE85640008B80CA /* ZXPAutoLayout */,
+			);
+			path = Thirds;
+			sourceTree = "<group>";
+		};
+		DCE588ED1DE85640008B80CA /* ZXPAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588EE1DE85640008B80CA /* ZXPAutoLayout.h */,
+				DCE588EF1DE85640008B80CA /* ZXPAutoLayout.m */,
+			);
+			path = ZXPAutoLayout;
+			sourceTree = "<group>";
+		};
+		DCE588F01DE85640008B80CA /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588FE1DE85640008B80CA /* Resource */,
+				DCE588F11DE85640008B80CA /* Controller */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		DCE588F11DE85640008B80CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588F61DE85640008B80CA /* Model */,
+				DCE588F91DE85640008B80CA /* View */,
+				DCE588F21DE85640008B80CA /* ANBMainViewController.h */,
+				DCE588F31DE85640008B80CA /* ANBMainViewController.m */,
+				DCE588F41DE85640008B80CA /* ANBPayWaysController.h */,
+				DCE588F51DE85640008B80CA /* ANBPayWaysController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCE588F61DE85640008B80CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588F71DE85640008B80CA /* ANBPaysModel.h */,
+				DCE588F81DE85640008B80CA /* ANBPaysModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCE588F91DE85640008B80CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588FA1DE85640008B80CA /* ANBPayTitleView.h */,
+				DCE588FB1DE85640008B80CA /* ANBPayTitleView.m */,
+				DCE588FC1DE85640008B80CA /* ANBPayWaysCell.h */,
+				DCE588FD1DE85640008B80CA /* ANBPayWaysCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCE588FE1DE85640008B80CA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DCE588FF1DE85640008B80CA /* ANBResourceUtils.h */,
+				DCE589001DE85640008B80CA /* ANBResourceUtils.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCE588B31DE855C1008B80CA /* payDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE588E11DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemo" */;
+			buildPhases = (
+				DCE588B01DE855C1008B80CA /* Sources */,
+				DCE588B11DE855C1008B80CA /* Frameworks */,
+				DCE588B21DE855C1008B80CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = payDemo;
+			productName = payDemo;
+			productReference = DCE588B41DE855C1008B80CA /* payDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCE588CC1DE855C1008B80CA /* payDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE588E41DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemoTests" */;
+			buildPhases = (
+				DCE588C91DE855C1008B80CA /* Sources */,
+				DCE588CA1DE855C1008B80CA /* Frameworks */,
+				DCE588CB1DE855C1008B80CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE588CF1DE855C1008B80CA /* PBXTargetDependency */,
+			);
+			name = payDemoTests;
+			productName = payDemoTests;
+			productReference = DCE588CD1DE855C1008B80CA /* payDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE588D71DE855C2008B80CA /* payDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE588E71DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemoUITests" */;
+			buildPhases = (
+				DCE588D41DE855C2008B80CA /* Sources */,
+				DCE588D51DE855C2008B80CA /* Frameworks */,
+				DCE588D61DE855C2008B80CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE588DA1DE855C2008B80CA /* PBXTargetDependency */,
+			);
+			name = payDemoUITests;
+			productName = payDemoUITests;
+			productReference = DCE588D81DE855C2008B80CA /* payDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCE588AC1DE855C1008B80CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ANB;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Ampaw;
+				TargetAttributes = {
+					DCE588B31DE855C1008B80CA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 293VM2BUQ6;
+						ProvisioningStyle = Manual;
+					};
+					DCE588CC1DE855C1008B80CA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCE588B31DE855C1008B80CA;
+					};
+					DCE588D71DE855C2008B80CA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCE588B31DE855C1008B80CA;
+					};
+				};
+			};
+			buildConfigurationList = DCE588AF1DE855C1008B80CA /* Build configuration list for PBXProject "payDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCE588AB1DE855C1008B80CA;
+			productRefGroup = DCE588B51DE855C1008B80CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE588B31DE855C1008B80CA /* payDemo */,
+				DCE588CC1DE855C1008B80CA /* payDemoTests */,
+				DCE588D71DE855C2008B80CA /* payDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCE588B21DE855C1008B80CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE589011DE85640008B80CA /* ThirdPay.bundle in Resources */,
+				DCE588C71DE855C1008B80CA /* LaunchScreen.storyboard in Resources */,
+				DCE588C41DE855C1008B80CA /* Assets.xcassets in Resources */,
+				DCE588C21DE855C1008B80CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588CB1DE855C1008B80CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588D61DE855C2008B80CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCE588B01DE855C1008B80CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE588BC1DE855C1008B80CA /* AppDelegate.m in Sources */,
+				DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */,
+				DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */,
+				DCE589041DE85640008B80CA /* ANBPayWaysController.m in Sources */,
+				DCE589051DE85640008B80CA /* ANBPaysModel.m in Sources */,
+				DCE589061DE85640008B80CA /* ANBPayTitleView.m in Sources */,
+				DCE588B91DE855C1008B80CA /* main.m in Sources */,
+				DCE589021DE85640008B80CA /* ZXPAutoLayout.m in Sources */,
+				DCE589031DE85640008B80CA /* ANBMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588C91DE855C1008B80CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE588D21DE855C2008B80CA /* payDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE588D41DE855C2008B80CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE588DD1DE855C2008B80CA /* payDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCE588CF1DE855C1008B80CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE588B31DE855C1008B80CA /* payDemo */;
+			targetProxy = DCE588CE1DE855C1008B80CA /* PBXContainerItemProxy */;
+		};
+		DCE588DA1DE855C2008B80CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE588B31DE855C1008B80CA /* payDemo */;
+			targetProxy = DCE588D91DE855C2008B80CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCE588C01DE855C1008B80CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE588C11DE855C1008B80CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCE588C51DE855C1008B80CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE588C61DE855C1008B80CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCE588DF1DE855C2008B80CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCE588E01DE855C2008B80CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCE588E21DE855C2008B80CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 293VM2BUQ6;
+				INFOPLIST_FILE = payDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c297115c-bd7e-4110-bca0-100816b16b27";
+				PROVISIONING_PROFILE_SPECIFIER = CodeResignDevelopment;
+			};
+			name = Debug;
+		};
+		DCE588E31DE855C2008B80CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 293VM2BUQ6;
+				INFOPLIST_FILE = payDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c297115c-bd7e-4110-bca0-100816b16b27";
+				PROVISIONING_PROFILE_SPECIFIER = CodeResignDevelopment;
+			};
+			name = Release;
+		};
+		DCE588E51DE855C2008B80CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = payDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/payDemo.app/payDemo";
+			};
+			name = Debug;
+		};
+		DCE588E61DE855C2008B80CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = payDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/payDemo.app/payDemo";
+			};
+			name = Release;
+		};
+		DCE588E81DE855C2008B80CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = payDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = payDemo;
+			};
+			name = Debug;
+		};
+		DCE588E91DE855C2008B80CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = payDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ampaw.payDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = payDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCE588AF1DE855C1008B80CA /* Build configuration list for PBXProject "payDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE588DF1DE855C2008B80CA /* Debug */,
+				DCE588E01DE855C2008B80CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE588E11DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE588E21DE855C2008B80CA /* Debug */,
+				DCE588E31DE855C2008B80CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCE588E41DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE588E51DE855C2008B80CA /* Debug */,
+				DCE588E61DE855C2008B80CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCE588E71DE855C2008B80CA /* Build configuration list for PBXNativeTarget "payDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE588E81DE855C2008B80CA /* Debug */,
+				DCE588E91DE855C2008B80CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCE588AC1DE855C1008B80CA /* Project object */;
+}
