@@ -11,6 +11,7 @@
 #import "ANBPayTitleView.h"
 #import "ANBPaysModel.h"
 #import "ANBPayWaysCell.h"
+#import "WXPayApiManager.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -101,6 +102,30 @@
     }];
 
 }
+/*
+ * 支付点单信息【微信支付信息：调试代码】
+ */
+- (NSDictionary *)payInfo
+{
+    /*
+     appid=wxb4ba3c02aa476ea1
+     partid=1305176001
+     prepayid=wx20161126150510dfb58f523a0807372053
+     noncestr=51e6135c5706494a71c1aedf7ac3292e
+     timestamp=1480143910
+     package=Sign=WXPay
+     sign=A864BA3A41F8207FDD90E33971027948
+     */
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setValue:@"wxb4ba3c02aa476ea1" forKey:@"appid"];
+    [dict setValue:@"51e6135c5706494a71c1aedf7ac3292e" forKey:@"noncestr"];
+    [dict setValue:@"Sign=WXPay" forKey:@"package"];
+    [dict setValue:@"1305176001" forKey:@"partnerid"];
+    [dict setValue:@"wx20161126150510dfb58f523a0807372053" forKey:@"prepayid"];
+    [dict setValue:@"A864BA3A41F8207FDD90E33971027948" forKey:@"sign"];
+    [dict setValue:@"1480143910" forKey:@"timestamp"];
+    return dict;
+}
 
 #pragma mark - Action
 - (void)sure:(UIButton *)sender
@@ -124,6 +149,7 @@
                 case PayWays_WECHAT:
                 {
                     NSLog(@"微信");
+                    [[WXPayApiManager sharedManager] openWXPayWithPayInfo:[self payInfo]];
                 }
                     break;
                     

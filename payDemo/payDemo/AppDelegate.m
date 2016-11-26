@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXPayApiManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[WXPayApiManager sharedManager] registerWXPay:@"wxb4ba3c02aa476ea1"];
     return YES;
 }
 
