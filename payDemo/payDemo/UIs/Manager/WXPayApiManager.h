@@ -28,6 +28,6 @@
 /*
  * 支付完成跳转回来App
  */
-- (BOOL)handleOpenURL:(NSURL *)url;
+- (void)handleOpenURL:(NSURL *)url;
 
 @end

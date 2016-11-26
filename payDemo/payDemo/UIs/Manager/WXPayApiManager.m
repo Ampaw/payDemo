@@ -62,9 +62,9 @@
 /*
  * 支付完成跳转回来App  url 微信启动第三方应用时传递过来的 URL
  */
-- (BOOL)handleOpenURL:(NSURL *)url
+- (void)handleOpenURL:(NSURL *)url
 {
-    return [WXApi handleOpenURL:url delegate:[WXPayApiManager sharedManager]];
+    [WXApi handleOpenURL:url delegate:[WXPayApiManager sharedManager]];
 }
 #pragma mark - WXApiDelegate
 /*
@@ -90,7 +90,6 @@
                 info = @"支付失败";
                 break;
         }
-        dict[@"info"] = info;
     }
 }
 

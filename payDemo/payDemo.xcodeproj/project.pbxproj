@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3A57311DE97E250031C8F1 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3A57301DE97E250031C8F1 /* libPaymentControl.a */; };
+		DC3A57341DE97E670031C8F1 /* UPPayApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A57331DE97E670031C8F1 /* UPPayApiManager.m */; };
 		DCE588B91DE855C1008B80CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588B81DE855C1008B80CA /* main.m */; };
 		DCE588BC1DE855C1008B80CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588BB1DE855C1008B80CA /* AppDelegate.m */; };
 		DCE588C21DE855C1008B80CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE588C01DE855C1008B80CA /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC3A572E1DE97E250031C8F1 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		DC3A57301DE97E250031C8F1 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		DC3A57321DE97E670031C8F1 /* UPPayApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayApiManager.h; sourceTree = "<group>"; };
+		DC3A57331DE97E670031C8F1 /* UPPayApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPPayApiManager.m; sourceTree = "<group>"; };
 		DCE588B41DE855C1008B80CA /* payDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = payDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE588B81DE855C1008B80CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCE588BA1DE855C1008B80CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 				DCE589521DE86DCB008B80CA /* libWeChatSDK.a in Frameworks */,
 				DCE589411DE85F92008B80CA /* SystemConfiguration.framework in Frameworks */,
 				DCE589401DE85F7E008B80CA /* CoreTelephony.framework in Frameworks */,
+				DC3A57311DE97E250031C8F1 /* libPaymentControl.a in Frameworks */,
 				DCE5893D1DE85F4A008B80CA /* libstdc++.tbd in Frameworks */,
 				DCE5893C1DE85F3D008B80CA /* libsqlite3.tbd in Frameworks */,
 				DCE5893B1DE85F30008B80CA /* libz.tbd in Frameworks */,
@@ -137,6 +144,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC3A572C1DE97E250031C8F1 /* upPay */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A572D1DE97E250031C8F1 /* inc */,
+				DC3A572F1DE97E250031C8F1 /* libs */,
+			);
+			path = upPay;
+			sourceTree = "<group>";
+		};
+		DC3A572D1DE97E250031C8F1 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A572E1DE97E250031C8F1 /* UPPaymentControl.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		DC3A572F1DE97E250031C8F1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A57301DE97E250031C8F1 /* libPaymentControl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 		DCE588AB1DE855C1008B80CA = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +314,7 @@
 		DCE589091DE858CC008B80CA /* PayWays */ = {
 			isa = PBXGroup;
 			children = (
+				DC3A572C1DE97E250031C8F1 /* upPay */,
 				DCE5894D1DE86DCB008B80CA /* WXPay */,
 			);
 			path = PayWays;
@@ -311,6 +344,8 @@
 			children = (
 				DCE589141DE8597D008B80CA /* WXPayApiManager.h */,
 				DCE589151DE8597D008B80CA /* WXPayApiManager.m */,
+				DC3A57321DE97E670031C8F1 /* UPPayApiManager.h */,
+				DC3A57331DE97E670031C8F1 /* UPPayApiManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -466,6 +501,7 @@
 				DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */,
 				DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */,
 				DCE589041DE85640008B80CA /* ANBPayWaysController.m in Sources */,
+				DC3A57341DE97E670031C8F1 /* UPPayApiManager.m in Sources */,
 				DCE589161DE8597D008B80CA /* WXPayApiManager.m in Sources */,
 				DCE589051DE85640008B80CA /* ANBPaysModel.m in Sources */,
 				DCE589061DE85640008B80CA /* ANBPayTitleView.m in Sources */,
@@ -627,6 +663,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/WXPay",
+					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/upPay/libs",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -650,6 +687,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/WXPay",
+					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/upPay/libs",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

@@ -12,6 +12,7 @@
 #import "ANBPaysModel.h"
 #import "ANBPayWaysCell.h"
 #import "WXPayApiManager.h"
+#import "UPPayApiManager.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -143,6 +144,7 @@
                 case PayWays_UNION:
                 {
                     NSLog(@"银联");
+                    [[UPPayApiManager sharedManager] startPay:@"wx20161126150510dfb58f523a0807372053" fromScheme:@"scheme" mode:@"01" viewController:self];
                 }
                     break;
                     
