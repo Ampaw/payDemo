@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1D10181E07BACB00A6B97A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC1D10161E07BACB00A6B97A /* AlipaySDK.bundle */; };
+		DC1D10191E07BACB00A6B97A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D10171E07BACB00A6B97A /* AlipaySDK.framework */; };
+		DC1D101C1E07BB3500A6B97A /* AliPayApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1D101B1E07BB3500A6B97A /* AliPayApiManager.m */; };
+		DC1D10261E07C25C00A6B97A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D10251E07C25C00A6B97A /* CoreMotion.framework */; };
 		DC3A57311DE97E250031C8F1 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3A57301DE97E250031C8F1 /* libPaymentControl.a */; };
 		DC3A57341DE97E670031C8F1 /* UPPayApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A57331DE97E670031C8F1 /* UPPayApiManager.m */; };
 		DCE588B91DE855C1008B80CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588B81DE855C1008B80CA /* main.m */; };
@@ -55,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC1D10161E07BACB00A6B97A /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		DC1D10171E07BACB00A6B97A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		DC1D101A1E07BB3500A6B97A /* AliPayApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayApiManager.h; sourceTree = "<group>"; };
+		DC1D101B1E07BB3500A6B97A /* AliPayApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayApiManager.m; sourceTree = "<group>"; };
+		DC1D101D1E07C16200A6B97A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DC1D101F1E07C21D00A6B97A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC1D10211E07C23000A6B97A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DC1D10231E07C24600A6B97A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DC1D10251E07C25C00A6B97A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DC3A572E1DE97E250031C8F1 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		DC3A57301DE97E250031C8F1 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		DC3A57321DE97E670031C8F1 /* UPPayApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayApiManager.h; sourceTree = "<group>"; };
@@ -113,11 +126,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1D10261E07C25C00A6B97A /* CoreMotion.framework in Frameworks */,
 				DCE589451DE86363008B80CA /* Security.framework in Frameworks */,
 				DCE589441DE86356008B80CA /* Foundation.framework in Frameworks */,
 				DCE589431DE8634F008B80CA /* UIKit.framework in Frameworks */,
 				DCE589421DE86299008B80CA /* CFNetwork.framework in Frameworks */,
 				DCE589521DE86DCB008B80CA /* libWeChatSDK.a in Frameworks */,
+				DC1D10191E07BACB00A6B97A /* AlipaySDK.framework in Frameworks */,
 				DCE589411DE85F92008B80CA /* SystemConfiguration.framework in Frameworks */,
 				DCE589401DE85F7E008B80CA /* CoreTelephony.framework in Frameworks */,
 				DC3A57311DE97E250031C8F1 /* libPaymentControl.a in Frameworks */,
@@ -144,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1D10151E07BACB00A6B97A /* alipay */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D10161E07BACB00A6B97A /* AlipaySDK.bundle */,
+				DC1D10171E07BACB00A6B97A /* AlipaySDK.framework */,
+			);
+			path = alipay;
+			sourceTree = "<group>";
+		};
 		DC3A572C1DE97E250031C8F1 /* upPay */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +338,7 @@
 		DCE589091DE858CC008B80CA /* PayWays */ = {
 			isa = PBXGroup;
 			children = (
+				DC1D10151E07BACB00A6B97A /* alipay */,
 				DC3A572C1DE97E250031C8F1 /* upPay */,
 				DCE5894D1DE86DCB008B80CA /* WXPay */,
 			);
@@ -323,6 +348,11 @@
 		DCE589101DE858F3008B80CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC1D10251E07C25C00A6B97A /* CoreMotion.framework */,
+				DC1D10231E07C24600A6B97A /* QuartzCore.framework */,
+				DC1D10211E07C23000A6B97A /* CoreText.framework */,
+				DC1D101F1E07C21D00A6B97A /* CoreGraphics.framework */,
+				DC1D101D1E07C16200A6B97A /* libc++.tbd */,
 				DCE589461DE86AD8008B80CA /* libc++abi.tbd */,
 				DCE5893E1DE85F69008B80CA /* libstdc++.6.tbd */,
 				DCE589351DE85EA4008B80CA /* libstdc++.tbd */,
@@ -346,6 +376,8 @@
 				DCE589151DE8597D008B80CA /* WXPayApiManager.m */,
 				DC3A57321DE97E670031C8F1 /* UPPayApiManager.h */,
 				DC3A57331DE97E670031C8F1 /* UPPayApiManager.m */,
+				DC1D101A1E07BB3500A6B97A /* AliPayApiManager.h */,
+				DC1D101B1E07BB3500A6B97A /* AliPayApiManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -469,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1D10181E07BACB00A6B97A /* AlipaySDK.bundle in Resources */,
 				DCE589011DE85640008B80CA /* ThirdPay.bundle in Resources */,
 				DCE588C71DE855C1008B80CA /* LaunchScreen.storyboard in Resources */,
 				DCE588C41DE855C1008B80CA /* Assets.xcassets in Resources */,
@@ -499,6 +532,7 @@
 			files = (
 				DCE588BC1DE855C1008B80CA /* AppDelegate.m in Sources */,
 				DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */,
+				DC1D101C1E07BB3500A6B97A /* AliPayApiManager.m in Sources */,
 				DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */,
 				DCE589041DE85640008B80CA /* ANBPayWaysController.m in Sources */,
 				DC3A57341DE97E670031C8F1 /* UPPayApiManager.m in Sources */,
@@ -657,6 +691,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 293VM2BUQ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/alipay",
+				);
 				INFOPLIST_FILE = payDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -681,6 +719,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 293VM2BUQ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/payDemo/Thirds/PayWays/alipay",
+				);
 				INFOPLIST_FILE = payDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -74,20 +74,18 @@
 {
     if ([resp isKindOfClass:[PayResp class]]) {
         //支付返回结果，实际支付结果需要去微信服务器端查询
-        NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-        NSString * info = @"支付失败";
         switch (resp.errCode) {
             case WXSuccess:
-                info = @"支付成功";
+                NSLog(@"支付成功");
                 break;
             case WXErrCodeCommon:
-                info = @"支付失败";
+                NSLog(@"支付失败");
                 break;
             case WXErrCodeUserCancel:
-                info = @"支付取消";
+                NSLog(@"支付取消");
                 break;
             default:
-                info = @"支付失败";
+                NSLog(@"支付失败");
                 break;
         }
     }

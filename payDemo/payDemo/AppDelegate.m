@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WXPayApiManager.h"
 #import "UPPayApiManager.h"
+#import "AliPayApiManager.h"
 
 @interface AppDelegate ()
 
@@ -27,11 +28,13 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
     [[WXPayApiManager sharedManager] handleOpenURL:url];
     [[UPPayApiManager sharedManager] handleOpenURL:url];
+    [[AliPayApiManager shareManager] anb_alipayWithUrl:url];
     return YES;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     [[WXPayApiManager sharedManager] handleOpenURL:url];
     [[UPPayApiManager sharedManager] handleOpenURL:url];
+    [[AliPayApiManager shareManager] anb_alipayWithUrl:url];
     return YES;
 }
 

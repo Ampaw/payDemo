@@ -13,6 +13,7 @@
 #import "ANBPayWaysCell.h"
 #import "WXPayApiManager.h"
 #import "UPPayApiManager.h"
+#import "AliPayApiManager.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -137,6 +138,25 @@
                 case PayWays_ALIPAY:
                 {
                     NSLog(@"支付宝");
+                    // 来自支付宝文档数据
+                    NSString *orderString = @"app_id=2015052600090779&biz_content=%7B%22timeout_express%22%3A%2230m%22%2C%22seller_id%22%3A%22%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.02%22%2C%22subject%22%3A%221%22%2C%22body%22%3A%22%E6%88%91%E6%98%AF%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%22%2C%22out_trade_no%22%3A%22314VYGIAGG7ZOYY%22%7D&charset=utf-8&method=alipay.trade.app.pay&sign_type=RSA&timestamp=2016-08-15%2012%3A12%3A15&version=1.0&sign=MsbylYkCzlfYLy9PeRwUUIg9nZPeN9SfXPNavUCroGKR5Kqvx0nEnd3eRmKxJuthNUx4ERCXe552EV9PfwexqW%2B1wbKOdYtDIb4%2B7PL3Pc94RZL0zKaWcaY3tSL89%2FuAVUsQuFqEJdhIukuKygrXucvejOUgTCfoUdwTi7z%2BZzQ%3D";
+                    NSString *appScheme = @"scheme";
+                    /**
+                     *  发起支付
+                     */
+                    [[AliPayApiManager shareManager] anb_alipayWithOrderStr:orderString appScheme:appScheme];
+                    
+                    /**
+                     *  支付回调
+                     */
+                    [AliPayApiManager shareManager].anb_callback = ^(NSDictionary *result){
+                        if ([result[@"resultStatus"] isEqualToString:@"9000"]){
+                            NSLog(@"支付成功");
+                        }
+                        else{
+                            NSLog(@"支付失败");
+                        }
+                    };
                     
                 }
                     break;
@@ -144,14 +164,29 @@
                 case PayWays_UNION:
                 {
                     NSLog(@"银联");
-                    [[UPPayApiManager sharedManager] startPay:@"wx20161126150510dfb58f523a0807372053" fromScheme:@"scheme" mode:@"01" viewController:self];
+                    if (![[UPPayApiManager sharedManager] isPaymentAppInstalled]) {
+                        NSLog(@"提示安装银联‘安全支付助手’支付");
+                        return;
+                    }
+                    else {
+                        [[UPPayApiManager sharedManager] startPay:@"wx20161126150510dfb58f523a0807372053"
+                                                       fromScheme:@"scheme"
+                                                             mode:@"01"
+                                                   viewController:self];
+                    }
                 }
                     break;
                     
                 case PayWays_WECHAT:
                 {
                     NSLog(@"微信");
-                    [[WXPayApiManager sharedManager] openWXPayWithPayInfo:[self payInfo]];
+                    if (![[WXPayApiManager sharedManager] isWXAppSupportApi]) {
+                        NSLog(@"提示安装‘微信客户端’支付");
+                        return;
+                    }
+                    else {
+                        [[WXPayApiManager sharedManager] openWXPayWithPayInfo:[self payInfo]];
+                    }
                 }
                     break;
                     
