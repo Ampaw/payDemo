@@ -27,7 +27,7 @@
 		DCE589051DE85640008B80CA /* ANBPaysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588F81DE85640008B80CA /* ANBPaysModel.m */; };
 		DCE589061DE85640008B80CA /* ANBPayTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588FB1DE85640008B80CA /* ANBPayTitleView.m */; };
 		DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE588FD1DE85640008B80CA /* ANBPayWaysCell.m */; };
-		DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE589001DE85640008B80CA /* ANBResourceUtils.m */; };
+		DCE589081DE85640008B80CA /* Anb_ResourceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE589001DE85640008B80CA /* Anb_ResourceUtils.m */; };
 		DCE589161DE8597D008B80CA /* WXPayApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE589151DE8597D008B80CA /* WXPayApiManager.m */; };
 		DCE5893B1DE85F30008B80CA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE589231DE859FF008B80CA /* libz.tbd */; };
 		DCE5893C1DE85F3D008B80CA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE589251DE85A06008B80CA /* libsqlite3.tbd */; };
@@ -99,8 +99,8 @@
 		DCE588FB1DE85640008B80CA /* ANBPayTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPayTitleView.m; sourceTree = "<group>"; };
 		DCE588FC1DE85640008B80CA /* ANBPayWaysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBPayWaysCell.h; sourceTree = "<group>"; };
 		DCE588FD1DE85640008B80CA /* ANBPayWaysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBPayWaysCell.m; sourceTree = "<group>"; };
-		DCE588FF1DE85640008B80CA /* ANBResourceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBResourceUtils.h; sourceTree = "<group>"; };
-		DCE589001DE85640008B80CA /* ANBResourceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBResourceUtils.m; sourceTree = "<group>"; };
+		DCE588FF1DE85640008B80CA /* Anb_ResourceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anb_ResourceUtils.h; sourceTree = "<group>"; };
+		DCE589001DE85640008B80CA /* Anb_ResourceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Anb_ResourceUtils.m; sourceTree = "<group>"; };
 		DCE589111DE858F3008B80CA /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = payDemo/Thirds/PayWays/WXPay/libWeChatSDK.a; sourceTree = "<group>"; };
 		DCE589141DE8597D008B80CA /* WXPayApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPayApiManager.h; sourceTree = "<group>"; };
 		DCE589151DE8597D008B80CA /* WXPayApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPayApiManager.m; sourceTree = "<group>"; };
@@ -329,8 +329,8 @@
 		DCE588FE1DE85640008B80CA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				DCE588FF1DE85640008B80CA /* ANBResourceUtils.h */,
-				DCE589001DE85640008B80CA /* ANBResourceUtils.m */,
+				DCE588FF1DE85640008B80CA /* Anb_ResourceUtils.h */,
+				DCE589001DE85640008B80CA /* Anb_ResourceUtils.m */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				DCE588BC1DE855C1008B80CA /* AppDelegate.m in Sources */,
 				DCE589071DE85640008B80CA /* ANBPayWaysCell.m in Sources */,
 				DC1D101C1E07BB3500A6B97A /* AliPayApiManager.m in Sources */,
-				DCE589081DE85640008B80CA /* ANBResourceUtils.m in Sources */,
+				DCE589081DE85640008B80CA /* Anb_ResourceUtils.m in Sources */,
 				DCE589041DE85640008B80CA /* ANBPayWaysController.m in Sources */,
 				DC3A57341DE97E670031C8F1 /* UPPayApiManager.m in Sources */,
 				DCE589161DE8597D008B80CA /* WXPayApiManager.m in Sources */,

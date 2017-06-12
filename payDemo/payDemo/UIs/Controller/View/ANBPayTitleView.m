@@ -8,7 +8,7 @@
 
 #import "ANBPayTitleView.h"
 #import "ZXPAutoLayout.h"
-#import "ANBResourceUtils.h"
+#import "Anb_ResourceUtils.h"
 
 @interface ANBPayTitleView ()
 
@@ -42,7 +42,7 @@
     // closeBtn
     UIButton *close = [UIButton new];
     [close setBackgroundColor:[UIColor clearColor]];
-    [close setBackgroundImage:[[ANBResourceUtils manager] image:@"close"] forState:UIControlStateNormal];
+    [close setBackgroundImage:[[Anb_ResourceUtils manager] image:@"close"] forState:UIControlStateNormal];
     [close addTarget:self action:@selector(close:) forControlEvents:UIControlEventTouchUpInside];
     [close sizeToFit];
     [self addSubview:close];

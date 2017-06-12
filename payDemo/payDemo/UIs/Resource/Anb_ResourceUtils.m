@@ -6,23 +6,23 @@
 //  Copyright © 2016年 Ampaw. All rights reserved.
 //
 
-#import "ANBResourceUtils.h"
+#import "Anb_ResourceUtils.h"
 
-@interface ANBResourceUtils ()
+@interface Anb_ResourceUtils ()
 {
     NSBundle *_bundle;
 }
 
 @end
 
-@implementation ANBResourceUtils
+@implementation Anb_ResourceUtils
 
-+ (ANBResourceUtils *)manager
++ (Anb_ResourceUtils *)manager
 {
     static id manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[ANBResourceUtils alloc] init];
+        manager = [[Anb_ResourceUtils alloc] init];
     });
     return manager;
 }

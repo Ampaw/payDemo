@@ -7,7 +7,7 @@
 //
 
 #import "ANBPayWaysCell.h"
-#import "ANBResourceUtils.h"
+#import "Anb_ResourceUtils.h"
 #import "ZXPAutoLayout.h"
 
 @interface ANBPayWaysCell ()
@@ -101,7 +101,7 @@
 - (void)setIconImgName:(NSString *)iconImgName
 {
     _iconImgName = iconImgName;
-    self.iconImg.image = [[ANBResourceUtils manager] image:iconImgName];
+    self.iconImg.image = [[Anb_ResourceUtils manager] image:iconImgName];
 }
 - (void)setMainTitle:(NSString *)mainTitle
 {
@@ -134,7 +134,7 @@
 - (void)setSelectImgName:(NSString *)selectImgName
 {
     _selectImgName = selectImgName;
-    self.selectImg.image = [[ANBResourceUtils manager] image:selectImgName];;
+    self.selectImg.image = [[Anb_ResourceUtils manager] image:selectImgName];;
 }
 
 #pragma mark - Lazy

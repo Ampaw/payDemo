@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ANBResourceUtils : NSObject
+@interface Anb_ResourceUtils : NSObject
 
-+ (ANBResourceUtils *)manager;
++ (Anb_ResourceUtils *)manager;
 
 /*
  *  从Bundle中获取指定名称的png图片
